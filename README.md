@@ -16,6 +16,8 @@ Note that every iterator is also an iterable, but not every iterable is an itera
 
 ![im](https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/08/28190200/Iterators-in-Python.jpg)
 
+![im](https://nvie.com/img/relationships.png)
+
 ## Project: Description
 The starting point for this project is the Polygon class and the Polygons sequence type we created in the previous project.
 
