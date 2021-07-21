@@ -18,6 +18,7 @@ class Polygons:
         self._m = m
         self._R = R
         self._polygons = [Polygon(i, R) for i in range(3, m+1)]
+        self._index = 0
         
     def __len__(self):
         return self._m - 2
@@ -27,6 +28,17 @@ class Polygons:
     
     def __getitem__(self, s):
         return self._polygons[s]
+    
+    def __iter__(self):
+        self
+    
+    def __next__(self):
+        if self._index >= self._m:
+            raise StopIteration
+        else:
+            item = self._polygons[self.__index]
+            self._index += 1
+            return item
     
     @property
     def max_efficiency_polygon(self):
